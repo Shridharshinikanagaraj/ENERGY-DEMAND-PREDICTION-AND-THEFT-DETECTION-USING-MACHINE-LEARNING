@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theft and Demand Prediction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  
+</head>
+<body>
+    
+        <h1>RESIDENTIAL ENERGY MANAGEMENT SYSTEM</h1>
+        <table>
+            <tr>
+            <th>Voltage (V)</th>
+            <th>Current (mA)</th>
+            <th>Energy(Units)</th>
+            </tr>
+            <tr id="dataRow">
+            <td>Loading...</td>
+            <td>Loading...</td>
+            <td>Loading...</td>
+            </tr>
+        </table>
+        <div class="model">
+            <div class="left">
+                <div class="theft">
+                    <h2 class="heading"> THEFT STATUS </h2>
+                    <div class="theft_result">
+                        <h2>Result = </h2>
+                        <h2><span class="bulb" id="resultBulb"></span></h2>
+                    </div>
+                    
+                </div>
+        
+                <div class="button-container">
+                    <div>
+                        <button class="control-button" onclick="sendCommand('ON')">ON</button>
+                    </div>
+                    <div>
+                        <button class="control-button" onclick="sendCommand('OFF')">OFF</button>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <h2>DEMAND PREDICTION</h2>
+                </div>
+                <div>
+                    <img src="Picture1.png">
+                </div>
+                
+            </div>
+        </div>
+        <script src="js/home.js"></script>
+        
+
+</body>
+</html>
